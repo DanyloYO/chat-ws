@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Danil</title>
+    <link rel="stylesheet" href="/theme.css">
+    <link rel="stylesheet" href="/auth-liquid.css">
+</head>
+<body>
+    <div class="page-wrap auth-page">
+        <a class="back-link glass-panel" href="/">Danil</a>
+
+        <div class="auth-layout">
+            <section class="auth-story glass-panel">
+                <div>
+                    <span class="section-label">Sign In</span>
+                    <h1>Step back into the glass room.</h1>
+                    <p>
+                        Your login screen now matches the product: layered highlights, softer depth
+                        and a cleaner focus on the chat experience waiting behind it.
+                    </p>
+                </div>
+
+                <div class="story-grid">
+                    <article class="story-card">
+                        <strong>Liquid hierarchy</strong>
+                        <span>Large typography, clear contrast and panels that feel connected.</span>
+                    </article>
+                    <article class="story-card">
+                        <strong>Fast entry</strong>
+                        <span>Progress states tell you exactly when access is being checked.</span>
+                    </article>
+                    <article class="story-card">
+                        <strong>Unified flow</strong>
+                        <span>The same visual language now carries through landing and chat.</span>
+                    </article>
+                    <article class="story-card">
+                        <strong>Mobile ready</strong>
+                        <span>The layout stacks cleanly without losing the premium feel.</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="auth-card glass-panel">
+                <div class="auth-card-head">
+                    <span class="section-label">Account Access</span>
+                    <h2>Welcome back</h2>
+                    <p>Use your nickname and password to enter the live room.</p>
+                </div>
+
+                <form id="loginForm" class="auth-form">
+                    <div class="field-group">
+                        <label for="nickname">Nickname</label>
+                        <div class="input-shell">
+                            <input id="nickname" placeholder="Enter your nickname" autocomplete="username">
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="password">Password</label>
+                        <div class="input-shell">
+                            <input id="password" type="password" placeholder="Enter your password" autocomplete="current-password">
+                        </div>
+                    </div>
+
+                    <button class="primary-btn auth-submit" type="submit">Sign In</button>
+                    <p id="result" class="status-message" aria-live="polite"></p>
+                </form>
+
+                <div class="soft-divider"></div>
+
+                <div class="form-footer">
+                    <span class="footer-copy">No account yet?</span>
+                    <a class="text-link" href="/register">Create one now</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="/login/liquid.js" defer></script>
+</body>
+</html>

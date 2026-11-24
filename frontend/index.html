@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danil</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0f1720;
+    color:#e6edf3;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:16px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(15,23,32,0.75);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #1f2a38;
+}
+
+.logo{
+    font-weight:700;
+    font-size:20px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#cdd6e3;
+    margin-left:25px;
+    transition:.2s;
+}
+
+.nav-links a:hover{
+    color:white;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:72px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:17px;
+    opacity:.7;
+}
+
+/* ===== CONTACT ===== */
+
+.contact{
+    padding:50px 20px;
+    text-align:center;
+    border-top:1px solid #1f2a38;
+}
+
+.contact h2{
+    margin-bottom:15px;
+    font-size:20px;
+}
+
+.contact a{
+    display:block;
+    margin:6px;
+    color:#9fb3c8;
+    text-decoration:none;
+    font-size:15px;
+    transition:.2s;
+}
+
+.contact a:hover{
+    color:white;
+}
+
+/* ===== FOOTER ===== */
+
+.footer{
+    text-align:center;
+    padding:45px;
+    opacity:.45;
+    font-size:13px;
+    border-top:1px solid #1f2a38;
+    
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">Danil</div>
+
+    <div class="nav-links">
+        <a href="/"> Casino(soon...)</a>
+        <a href="/chat">Chat</a>
+        <a href="#contact">Contacts</a>
+    </div>
+</div>
+
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Danil</h1>
+    <p>Developer</p>
+    <p>v1.0.0</p>
+</section>
+
+
+<!-- CONTACTS -->
+<section class="contact" id="contact">
+    <h2>Contacts</h2>
+
+    <a href="mailto:danilkbel@gmail.com">
+        📧 danilkbel@gmail.com
+    </a>
+
+    <a href="https://t.me/c2313214" target="_blank">
+        💬 Telegram
+    </a>
+
+    <a href="https://github.com/" target="_blank">
+        💻 GitHub
+    </a>
+
+</section>
+
+<div class="footer">
+    © 2026 Danil
+</div>
+
+</body>
+</html>
